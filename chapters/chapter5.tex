@@ -1,0 +1,118 @@
+%!TEX root = ../username.tex
+\chapter{Software}
+There are many different ways to develop for VR. Unity3D and Unreal Engine are two free game engines that support VR development. Both are very popular and have their own pros and cons. Unity3D uses its own language called C\# while Unreal uses C++. This study uses Unity3D. Within every game engine the basic principles specifically how objects are created, transformed, and then displayed.  
+
+\section{The Virtual World}
+In the virtual world, each object is given a set of coordinates based on the right-handed coordinate system, shown in figure~\ref{fig:objectPlacement}. 
+\begin{figure}[!ht]
+	\begin{center}
+		\woopic{objectPlacement}{.7}
+	\end{center}
+	\caption{Objects receive a set of coordinates based on the right-handed coordinate system 
+		\cite{LaValle2017}.} \label{fig:objectPlacement}
+\end{figure}The up axis can be specified based on preference. One common practice uses y = 0 to correspond to the floor or sea level of as environment. The location of x = 0 and z = 0 are then in the center of the virtual world, which divides it into quadrants based on sign \cite{LaValle2017}. 
+
+
+To create a 3D object, a mesh of that object is created. A mesh is an arrangement of numerous triangles in a way that the final object can be identified as its intended form. The amount of triangles in the mesh can determine the detail of the object. A mesh with fewer triangles creates a less detailed geometric figure while a mesh with more triangles can create a more detailed and realistic form. There are two mesh types, coherent and non-coherent models. If the triangles that create the mesh are oriented so that the they "fit together perfectly so that every edge borders exactly two triangles and no triangles intersect unless they are adjacent along the surface" then they are a coherent model \cite{LaValle2017}. This is because there is a clear inside and outside of the model. If we were to fill the model with gas, none of the gas would leak out. A model that is not closed in this way is a non-coherent model and is not easy to work with \cite{LaValle2017}. Figure~\ref{fig:meshDolphin} is an example of a coherent model.
+\begin{figure}[!ht]
+	\begin{center}
+		\woopic{meshDolphin}{.8}
+	\end{center}
+	\caption{Mesh for a dolphin \cite{LaValle2017}.} \label{fig:meshDolphin}
+\end{figure}
+
+
+Triangles are used to create an object's mesh because they are convex primitives, lying in one plane. Algorithms that  handle triangles require the least computational cost than other. Other primitives like squares or rectangles are used but are translated into component triangles to avoid computational cost. It is important to have the least amount of computational cost so the game can run smoothly. Models can either be stationary or movable within the virtual world. Stationary models keep the same coordinates forever, like streets or buildings. Movable models can be moved or transformed into varying sizes, positions and orientations. Movable models can be objects such as cars or avatars \cite{LaValle2017}. Models can have many reasons to move such as physics, an environmental factor or because of a user's interactions \cite{LaValle2017}. If there is an interaction between two objects or the user and an object forces and other properties need to be taken into account, such as speed, mass, and gravity. The physics based movement of objects is discussed further in section~\ref{physics}.   
+
+
+To move an object in the virtual world while keeping it's original size and shape consistent, values (x, y, z) are added to each of the mesh's triangle's coordinates. For example if we have the 3D triangle,
+\[((x_{1}, y_{1}, z_{1}), (x_{2}, y_{2}, z_{2}), (x_{3}, y_{3}, z_{3}))\]
+and we move it by the amounts $x_{t}$, $y_{t}$, and $z_{t}$ then the new coordinates are;
+\[(x_{1}, y_{1}, z_{1})  \rightarrow ((x_{1} + x_{t}), (y_{1} + y_{t}), (z_{1} + z_{t}))\] 
+\[(x_{2}, y_{2}, z_{2})  \rightarrow ((x_{2} + x_{t}), (y_{2} + y_{t}), (z_{2} + z_{t}))\] 
+\[(x_{3}, y_{3}, z_{3})  \rightarrow ((x_{3} + x_{t}), (y_{3} + y_{t}), (z_{3} + z_{t}))\]
+
+
+To change the scale of an object, a constant (x, y, z) is multiplied to each of the mesh's triangle coordinates. If we observe the same triangle as before the new coordinates are as follows;
+\[(x_{1}, y_{1}, z_{1})  \rightarrow ((x_{1} * x_{t}), (y_{1} * y_{t}), (z_{1} * z_{t}))\] 
+\[(x_{2}, y_{2}, z_{2})  \rightarrow ((x_{2} * x_{t}), (y_{2} * y_{t}), (z_{2} * z_{t}))\] 
+\[(x_{3}, y_{3}, z_{3})  \rightarrow ((x_{3} * x_{t}), (y_{3} * y_{t}), (z_{3} * z_{t}))\]
+
+
+For a model's orientation to change, it needs to be rotated. There are three degrees of rotational freedom in 3D environments. These are shown in Figure~\ref{fig:rotaion}. 
+\begin{figure}[!ht]
+	\begin{center}
+		\woopic{rotation}{.8}
+	\end{center}
+	\caption{Three-dimensional rotations \cite{LaValle2017}.} \label{fig:rotaion}
+\end{figure}The yaw, pitch, and roll rotations can be combined to rotate a model in any direction. To rotate an object about one of the x, y, or z axis, each coordinate in the mesh's triangle's is multiplied by a matrix. The following is the general form of the matrices to calculate the rotation of an object around the z axis. The vector B contains the original (x, y, z) coordinates of the coordinate in the mesh's triangle's. The Greek letter $\gamma$ in the 3 X 3 matrix is the angle of rotation. The values in the third row of the 3 X 3 matrix allows for the z coordinates to be unchanged, as they should not change when rotating around the z axis \cite{LaValle2017}.
+\[
+\begin{bmatrix}
+	A_{x} \\
+	A_{y} \\
+	A_{z} 
+\end{bmatrix}
+=
+\begin{bmatrix}
+	cos \gamma & -sin \gamma & 0  \\
+	sin \gamma & -cos \gamma & 0  \\
+	0 & 0 & 1 \\
+\end{bmatrix}
+\begin{bmatrix}
+	B_{x} \\
+	B_{y} \\
+	B_{z} 
+\end{bmatrix}
+\]
+To change the rotation of the objects on the x or y axis the following matrices are used. Notice that the items in rows that correspond to the axis being rotated around, are not changed from the identity matrix;
+\[
+R_{x}(\beta) = 
+\begin{bmatrix}
+1 & 0 & 0 \\
+cos \beta & -sin \beta & 0  \\
+sin \beta & -cos \beta & 0  \\
+\end{bmatrix}
+\]
+\[
+R_{y}(\alpha) = 
+\begin{bmatrix}
+cos \alpha &  0 & sin \alpha  \\
+0 & 1 & 0 \\
+-sin \alpha & 0 & cos \alpha \\
+\end{bmatrix}
+\]
+
+
+There are two main ways objects can be rendered in virtual reality, both methods require a nested loop. The first is called object-order rendering. This works by analyzing which triangles are in the users field of view, the triangles that are closest to the eye will have their pixels updated first. For this method, the outer loop iterates over the triangles and the inner loop iterates over the pixels. Image-order rendering uses the outer loop to iterate over the pixels and the inner loop to find which triangles influence the RGB of that pixel \cite{LaValle2017}. 
+\begin{figure}[!ht]
+	\begin{center}
+		\woopic{raycasting}{.7}
+	\end{center}
+	\caption{Determining the first intersection between the users line of sight and the objects in the environment, this is done to find what triangles should be rendered \cite{LaValle2017}.} \label{fig:raycasting}
+\end{figure} There are two steps for rendering a pixel; ray casting (finding what to render) and shading (deciding what RGB it should have). Ray casting involves creating a ray from the eye into the virtual world. The nearest point of intersection among the triangles in the world will be the one that gets rendered. Shading is the calculation of the RGB of that pixel based on lighting conditions and material properties. Object-order rendering is much more efficient than image-order rendering because of this process \cite{LaValle2017}. To add texture to an object it is possible to add a repeating pattern to the surface of the object to give the illusion of texture, this is called texture mapping. 
+
+
+To improve performance and a faster frame rate a practice called culling is often used. Culling is a preprocessing phase of the rendering process. It eliminates some of the triangles from a scene that need to be rendered. One form of culling is called view volume culling. View volume culling is where the triangles that are outside the users field of view are eliminated. Occlusion culling is the elimination of triangles that would be hidden from view from a closer triangle. Another way to improve performance is to reduce the amount of triangles in the models, this may result in a loss of detail in the model but increase performance \cite{LaValle2017}. 
+
+
+\subsection{Physics}\label{physics}
+
+\subsection{Audio}
+For an effective sound display there are three categories that must be met; sound generation, spacial propagation, and mapping of parameters. Sound generation is the playback or creation of sound that follows an action, steps or object collisions for example. Spacial propagation is computationally expensive and involves calculating how sound wave would move in the environment, echoes off of objects of different shapes and materials for example. Finally mapping of parameters implies the the proper sounds being played in relation to the calculated parameters \cite{Mazuryk}. 
+
+
+\section{Introduction to Unity}
+Unity is a free to download game engine. Unity uses scripts, written in C\#, that can be attached to objects allowing that code to be applied to said object. It has a large set of assets, objects, available for free at the unity Asset Store. 
+
+
+\subsection{Locomotion}
+
+\subsection{User Input}
+
+
+
+\section{Conclusion}
+
+
+
+

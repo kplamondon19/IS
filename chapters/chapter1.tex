@@ -1,0 +1,252 @@
+%!TEX root = ../username.tex
+\chapter{Virtual Reality}
+Virtual reality (VR) is continually evolving and as new developments are made the definition changes and expands. The core concept of VR can be described as follows:  
+	\begin{quote}
+	"Inducing targeted behavior in an organism by using artificial sensory stimulation, while the organism has little or no awareness of the interference" \cite{LaValle2017}.
+	\end{quote} 
+The "targeted behavior" is the experience created by the developer, for example walking or flying. The "organism" can be any living thing, for example a human, fish, or monkey. The "artificial sensory stimulation" is the replacement of one or more of the organism's senses with an artificial stimulation. For example, sight or sound can be stimulated by a display or headphones. Lastly, "awareness" implies the organism's feeling of presence in the virtual world, allowing the organism to accept the virtual environment as being natural \cite{LaValle2017}. 
+\label{key}
+There are two main ways to construct a virtual environment. The developer can create a synthetic or captured world. Synthetic worlds are completely generated from geometric primitives and simulated physics, in other words it is completely computer generated. Captured virtual worlds are created from the real world by using modern imaging technologies. Captured worlds tend to lose information from the original environment and are harder to interact with while in VR than synthetic worlds \cite{LaValle2017}.
+
+One crucial component to VR is interactivity, the dependency of sensory stimulation on an action taken by the organism. If there is no interaction in the VR system then it is considered to be an open-loop, if there is interaction then it is a closed-loop. In the case of an closed-loop VR system the organism has partial control over the simulation. This could entail body motions such as movement of the eyes, head, or hands \cite{LaValle2017}. This control allows the user to interact and explore the environment creating a more immersive experience. 
+
+\section{History of Virtual Reality}
+Virtual reality technology is still in development. The simplistic and least immersive style of VR is known as desktop VR, also called Window on World (WoW). In desktop VR a monitor is used to display the world and no other sensory output is supported. Fish tank VR is slightly more complex and slightly more immersive by supporting head tracking technology in this case, when the user moves their head the displayed image "moves" accordingly, this however usually does not support other sensory output. Finally immersive systems such as the Oculus Rift allow the user to be totally immersed in the world with the use of head mounted displays and support of other sensory output such as audio and haptic feedback \cite{Mazuryk}.
+
+
+\begin{figure}[!ht]
+	\begin{center}
+		\woopic{FirstHMD}{.75}
+	\end{center}
+	\caption{The first head mounted display created by Ivan Sutherland in 1968 \cite{Mazuryk}. } \label{fig:FirstHMD}
+\end{figure}Ivan Sutherland had an interest in creating a virtual world that looked, felt, sounded, and responded realistically as if it was the real world. In 1965 he created the Ultimate Display that included interactive graphics, force-feedback, sound, smell, and taste. He however did not stop there. In 1968 he created the first head mounted display (HMD) with head tracking and an accordingly updated display. This is shown in Figure~\ref{fig:FirstHMD}. Although the created images were not realistic and only simple solid 3D objects, this development marked the beginning of modern virtual reality technology \cite{GutierrezA.2008}. After this in 1971 the "GROPE" was created. It was the first prototype of a force-feedback system and was created at the University of North Carolina. It used a previously developed haptic robot called the ARM (Argonne Remote Manipulator) that received feedback signals from sensors mounted to the robot that applied forces to the user \cite{GutierrezA.2008}. After the creation of the first HMD, development for VR began to increase. 
+\begin{figure}[!ht]
+	\begin{center}
+		\woopic{WindTunnelHMD}{.75}
+	\end{center}
+	\caption{NASA Ames Virtual Wind Tunnel: (a) outside view, (b) inside view \cite{Mazuryk}. } \label{fig:WindTunnelHMD}
+\end{figure} VCASS, developed in 1982 by the US Air Force's Armstrong Medical Research Laboratories, was an advanced flight simulator that allowed the user to view graphics showing targeting or optimal flight path information. Other HMD's were being developed, for example the VIVED, Virtual Visual Environment Display, was created by NASA Ames in 1984, and in the 1990's they also developed a Virtual Wind Tunnel. Some of the early head mounted displays and NASA Ames Virtual Wind Tunnel are shown in Figure~\ref{fig:WindTunnelHMD}. Advancements for the HMD continued and are being improved upon today. 
+
+
+\section{Applications}
+Virtual reality can be used not only for entertainment but can also be valuable in other fields. VR can be used to virtually transport people to places they would not otherwise be able to visit, for example visiting an ancient roman temple. Communication can be improved by the use of telepresence, using VR to interact and converse with people from around the world without leaving the room. VR can be used in education, allowing students to visualize complex concepts or data and can be used to create simulators for practical training. In health care, VR can be used to train doctors remotely and be used to create an interactive 3D model of anatomy. Doctors can even perform a virtual surgery to perfect their skills. Models of human muscles, bones, and skin can also be created to help people learn about their interaction. Figure~\ref{fig:HumanModel} shows some 3D models of the human body created for VR that can be interacted with.  
+\begin{figure}[!ht]
+	\begin{center}
+		\woopic{HumanModel}{.75}
+	\end{center}
+	\caption{In interactive model of the human muscles (Left) and a representation of the stress on the hip joint (Right) \cite{GutierrezA.2008}.} \label{fig:HumanModel}
+\end{figure}In therapy, VR can be used to help patients overcome phobias and stress disorders though repeated exposure, improve or maintain cognitive skills, and improve motor skills to overcome balance, muscular, or nervous system disorders \cite{LaValle2017}. VR can be used to help people who suffer from phantom limb after having had their limb amputated. For example someone could visualize their arm as really there with a VR headset while learning to use a prosthetic limb. VR is also a valuable resource when prototyping, designers can visualize their designs before creating them thus saving time and money \cite{LaValle2017}. 
+%Add a specific case 
+
+\section{Human Biology and Virtual Reality}
+
+To stimulate an organism's sensory system it is important to understand how it's sensory system works. In this case, humans are the target organisms. 70\% of the human experience is made from sight stimuli, 20\% is from auditory stimuli, 5\% from olfactory stimuli, 4\% from physical stimuli, and 1\% from flavor stimuli \cite{Mazuryk}. With today's technology, VR is focused on the stimulation of the human sense of sight, then sound, and finally touch. 
+
+
+Each sense has a corresponding receptor, these receptors respond to stimulus, a stimulus can be a sight, sound, feeling etc. When the human body detects a stimuli, the corresponding receptors activate. These receptors then fire certain neural impulses. 
+\begin{figure}[!ht]
+	\begin{center}
+		\woopic{HumanSences}{.75}
+	\end{center}
+	\caption{A classification of the human body senses \cite{LaValle2017}.} \label{fig:HumanSences}
+\end{figure}These impulses translate to one of the senses. The human body has many types of receptors and each responds to different stimuli. The receptors in turn activate different neural impulses. Figure ~\ref{fig:HumanSences} indicates the connection between the human senses, stimulation of the senses, receptors used in the neural transmission, and the sense organ. Specifically, within the human eye there are over 100 million photoreceptors, which perceive visible light. The human body uses mechanoreceptors to sense motion, vibration, or gravitational force. Thermoreceptors detect changes in temperature and finally, chemoreceptors provide neural signals based on the chemical composition of a substance that is in contact with the nose or mouth. In developing stimuli that makes these receptors fire in the brain, sensation is created. These sensations lead  to the player feeling as if the virtual world is as authentic as reality.
+
+\subsection{Seeing in Virtual Reality}
+In Virtual Reality it is important to understand the biology of the human brain and eye in order to create a virtual world that can be perceived and understood by the user. Humans have two main ways to use their eyes to gain information about their environment, binocular cues, using both eyes, and monocular cues, using one eye. The main function of these cues is to develop a sense of depth perception. This section provides more detail about how the eye perceives the world and how this information can then be applied to create a virtual environment.
+
+
+\subsubsection{Binocular Cues} \label{sec:Binocular Cues}
+Binocular cues involve using both eyes to understand an image. 
+\begin{figure}[!ht]
+	\begin{center}
+		\woopic{EyeConvergence}{.5}
+	\end{center}
+	\caption{This figure shows the position of human eyes when focused on near and far objects \cite{JIS2}.} \label{fig:eyeconvergence}
+\end{figure} The physical placement of the eyes and the image each eye sees are used by the brain to understand the whole image, where objects are placed and their size. Within a virtual environment the user should be able to view a three-dimensional (3D) virtual world. For this to occur the brain must be convinced that it is in a 3D world instead of looking at a 2D screen. 
+
+
+To create the 3D environment the illusion of depth is created. There are many methods to accomplish the aforementioned. While focusing on an object that is further in the distance, the viewer's pupils rotate away from each other. This is known as divergence. When an object is closer to the viewer, the pupils rotate towards each other to focus on the object. This is known as convergence. An example of how the eyes are positioned when looking at objects at different distances is shown in Figure~\ref{fig:eyeconvergence}. The brain uses the position and angle of the eyes to determine the distance of an object. In the use of head mounted displays the user views a display that is only inches away from the eyes. The short distance between the screen and eyes makes it impossible for the user to judge an on-screen object's distance based on the convergence or divergence of their eyes due to their eyes being focused on the screen. However, there are other methods to perceive depth of field. Each eye has a slightly different view of the world. The brain can compare the placement of an object within these two images and determine the depth of the object. This is known as stereopsis \cite{JIS2}. On head mounted displays each eye is shown a slightly different image. The slightly different images allow for the brain to perceive depth when comparing the two images. 
+\begin{figure}[!ht]
+	\begin{center}
+		\woopic{LeftRightEye}{1.1}
+	\end{center}
+	\caption{The images displayed for the left and right eyes on a head mounted display \cite{LaValle2017}.} \label{fig:LeftRightEye}
+\end{figure} Figure~\ref{fig:LeftRightEye} shows the difference in images for the right and left eye's display in a head mounted display. 
+
+
+\subsubsection{Monocular Cues}
+Binocular vision is not the only way the brain can perceive depth. Monocular vision involves the use of one eye to focus and interpret an object. Monocular cues are extremely helpful to use in VR to create a more realistic environment.   
+
+
+Imagine you are stationary and looking into a snow storm. You focus on a a snow flake that is falling about a foot in front of you and it seems to be moving quickly, entering and exiting your field of view in a short amount of time. Then, you focus on a snow flake that is falling about 20 feet in front of you. It seems to be moving more slowly, entering and exiting your field of view in a longer amount of time. Although we know they are moving at the same speed it seems the one further away is slower. This is referred to as motion parallax. Motion parallax can be utilized in VR to create depth by allowing game objects closer to the user to move faster in comparison to the same object that is located further in the distance \cite{JIS2}. 
+
+
+Now imagine we are in a forest where we can see a cabin. We can tell that there are trees behind the cabin because the cabin blocks the view of part of the trees. This is known as occlusion and can be used in VR games to create a sense of depth. Figure~\ref{fig:Perspective} shows an example of occlusion. 
+\begin{figure}[!ht]
+	\begin{center}
+		\woopic{Perspective}{.4}
+	\end{center}
+	\caption{Occlusion and linear perspective \cite{JIS3}.} \label{fig:Perspective}
+\end{figure} 
+
+
+In our wooded scene we can demonstrate relative size. We know in reality most of the trees are about the same size but some of them look smaller in size because they are further in the distance. We know this because of relative size, we perceive the trees that look smaller as being farther away, and the trees that look larger as being closer \cite{JIS2}. We can use this in VR to simulate depth by making similar sized objects at different distances different sizes.
+
+
+Now imagine there is a bear running towards us in the woods. As the bear gets closer to us it seems to be growing in size. We know the bear did not actually grow in size within the last few seconds, but rather it is understood that the bear is merely getting closer to us. This is called optical expansion. In VR if we want to show an object moving closer to the user then that object's scale should increase. 
+
+
+In the fine arts, it is common to use the principle of linear perspective to create depth. This is done by creating lines that converge to a single point, this creates the illusion of depth and distance. 
+\begin{figure}[!ht]
+	\begin{center}
+		\woopic{shadows}{.6}
+	\end{center}
+	\caption{Placement of objects can be understood based on their shadow's position \cite{LaValle2017}.} \label{fig:shadows}
+\end{figure}Figure~\ref{fig:Perspective} shows how linear perspective can create the illusion of depth. 
+
+
+In the fine arts it is also common to use shadowing. The placement of shadows can show the placement of objects, if there is a shadow touching the object we can assume it is on the ground. If the shadow is under the object then the object appears to be in the air and so on. Shadows can also indicate the relative size and shape of objects. The use of shadows to create a different perception of an object's placement is shown in Figure~\ref{fig:shadows}. 
+
+
+Lastly, objects that are far in the distance have less visible detail than objects that are closer. For example, when holding a rose it is possible to see each petal, thorn, and leaf. When that rose is at a distance, at the end of a football field for example, it is likely that those details will be lost and the general shape and color is all that remains. 
+
+
+These tactics can be used to trick the brain into thinking that the world is 3D. The sense of depth is vital in convincing the user that they are immersed in a real world. Occlusion, motion parallax, relative size, optical expansion, linear perspective, shadows, and use of detail can all be used in a virtual environment to create a more believable world. 
+
+
+\subsubsection{Seeing Color}
+Colors can be perceived to have three main components, hue, saturation, and value. This classification of color is the color space called HSV (hue, saturation, value). HSV is a color space that is easier to understand than the commonly used RGB (red, green, blue) system. Section~\ref{DisplayChap} discusses how a computer interprets RGB values and how it displays colors. In the HSV system, hue is the actual color, for example red or yellow. Saturation is the purity of the color, how vibrant or pastel it is. Value corresponds to the brightness. This is shown in Figure~\ref{fig:colors}.  
+\begin{figure}[!ht]
+	\begin{center}
+		\woopic{colors}{.6}
+	\end{center}
+	\caption{A representation of the color wheel with hue, saturation, and value \cite{LaValle2017}.} \label{fig:colors}
+\end{figure} To create a realistic virtual world the displayed color of objects should change when in different situations, lighting, surrounding, placement, etc. It is understood that if someone is standing within a shadow, the part of their shirt that is in the shadow is the same color as the part of their shirt that is in the sun. This is known as color consistency and should be applied in the VR world. 
+
+\subsection{Hearing in Virtual Reality}
+The sense of sound is an integral part of the the human experience. While developing for VR it is important to understand how the human ear processes sound and how to recreate realistic sounds for the user. Sound can be used to imply movement, direction, situational awareness, narration, confirmation or feedback, and different actions. The user can hear a sound from anywhere in the 360-degree space, giving them more information about their environment than even sight in some cases \cite{Madole1995}. 
+
+\subsubsection{Sound Intensities}
+There are many factors that control the volume of sound; proximity to the listener or type of sound, for example. When developing for VR it is important to keep in mind the volume of each sound in the environment. The ambient sounds of birds should not be louder than a nearby non-player character's (NPC) dialog. Figure~\ref{fig:soundVolume} shows the intensities for different sounds. It is important to use sound to help the player better understand and be immersed in the environment. It is important to keep in mind that the average human begins to feel pain with sounds that exceed 120 dB \cite{JIS2}. 
+\begin{figure}[!ht]
+	\begin{center}
+		\woopic{soundVolume}{1.4}
+	\end{center}
+	\caption{Common Environmental Noise Levels \cite{JIS2}.} \label{fig:soundVolume}
+\end{figure}
+
+
+Sounds can be used to display information about the environment. For example, when a sound is muffled it can be deduced that it's source is far away. This is called attenuation. The movement of sounds can also be detected, as the pitch of a sound increases it can be perceived that the source is moving towards the listener. This is referred to as the Doppler shift \cite{JIS2}. Sound waves move slower that light waves, because of this, there is a delay between a person being able to see a sounds' creation and being able to hear the created sound. For example, it takes a few moments for someone to hear the thunder from a lightning bolt that struck a few miles away. This is important to keep in mind when developing sound for VR environments in order to keep the user immersed and keep the environment believable \cite{Madole1995}. 
+
+
+Objects in the environment can also effect sound. To create a realistic outdoor environment factors such as wind and ground cover need to be taken into account. For instance, an environment containing wind sounds different than one without. The position of the user within the wind also matters, whether they are downwind or upwind. An environment surrounded by trees creates different sounds than one in short or thick grasses. The type of material that a sound is bouncing off of should also be taken into account as well as the amount of reverberation or echo a certain material makes. For example a loud sound in a padded room is absorbed much more quickly than a loud sound in an opera house \cite{Madole1995}.   
+
+
+Sounds should match the action in the environment. For example, if the user throws an item in the trash in VR it should sound like they are doing so and not like a dog bark. To create sounds it is possible to use synthetic or recorded sounds. Sounds can be created by changing the speed, pitch or combining two sounds. Foley sound is the process of creating sounds to fit a certain scene. Sound effect artists use every day objects to create surreal sounds, for example using a frozen turkey being slapped to give a punching sound a denser quality \cite{Madole1995}.   
+
+
+\subsubsection{The Human Ear}
+Humans have the ability to determine the direction of a sound. This can be useful in a virtual environment to help the player perceive their environment. The spherical coordinate system is used to describe location of sounds based on a human origin, as shown in Figure~\ref{fig:audiocoordinates}. 
+\begin{figure}[!ht]
+	\begin{center}
+		\woopic{audiocoordinates}{.4}
+	\end{center}
+	\caption{Common Environmental Noise Levels \cite{JIS2}.} \label{fig:audiocoordinates}
+\end{figure}The "common spherical coordinate system [is] based on three elements: azimuth (left or right of straight ahead on the horizontal plane, with 0 degrees azimuth directly in front, 90 degrees to the right, and 180 degrees  directly behind), elevation (the angle above or below the horizontal plane), and distance" \cite{JIS2}. In VR, sounds can be placed on this coordinate system to give the user a sense of space and direction. 
+%Expand
+
+\subsection{Feeling in Virtual Reality}
+There are two main kinds of haptic sensation, kinesthetic (force) feedback and tactile feedback. Kinesthetic feedback is sensed by the muscles, joints and tendons while tactile feedback is sensed through the skin. With today's technology tactile feedback is much more commonly used as opposed to kinesthetic feedback.
+
+ 
+Tactile feedback can be extremely beneficial to have in VR environments. It can create a more immersive environment, allow for easier navigation in the world, and tell the player that they have successfully completed a task. This kind of tactile feedback is known as haptics. An example of haptic feedback are the vibrations in a controller as the player presses a button to open a door. In reality there are many ways to explore an object through touch. It is possible to find the size, shape, weight, heat, firmness, and surface texture of an object by handling it. Figure~\ref{fig:hapticExplortion} demonstrates these interactions \cite{LaValle2017}. 
+\begin{figure}[!ht]
+	\begin{center}
+		\woopic{hapticExploration}{.6}
+	\end{center}
+	\caption{Interactions with objects \cite{LaValle2017}.} 	\label{fig:hapticExplortion}
+\end{figure}VR is still limited in the use of all of these tactile interactions. In most VR systems there is a controller for the user to interact with the virtual environment. That controller can vibrate to give the user haptic feedback but that is the extent of its feedback ability. Vibrations are not able to create kinesthetic feedback. A controller can not give the user information about an objects hardness, texture, temperature, weight, or shape. There are new technologies however that are being developed that increase the amount of information users can gain from haptic feedback. These technologies usually consist of a glove that houses other gadgets that can manipulate the hand to create the sensation of kinesthetic feedback \cite{Mazuryk}. Figure~\ref{fig:forceFeedback} shows an example of one of these kinds of gloves. 
+\begin{figure}[!ht]
+	\begin{center}
+		\woopic{forceFeedback}{.6}
+	\end{center}
+	\caption{Glove that can create sensations of kinesthetic feedback \cite{Mazuryk}.} \label{fig:forceFeedback}
+\end{figure}A newer device being produced is called the Gloveone, it is a lightweight glove that contains thousands of sensors that can be activated to vibrate through interaction with virtual objects. The glove's sensors can create 1024 intensities, therefore thousands of combinations. It also tracks the movement and placement of the hand on the plane (x,y,z). The glove has great potential and is continuing to be developed \cite{JIS2}. 
+
+
+Haptic feedback can create a link between the user and the VR world. The rubber hand illusion illustrates this idea well. In this illusion, the participant sits at a table with both arms outstretched and resting in front of them. The participants' left hand is covered with a cloth and a rubber hand is placed in its spot. The experimenter then stokes both the rubber hand and the participant's hand with a brush, this builds visual and touch association with the fake forearm. The experimenters found that the same part of the participant's brain was activated even when interacts with the fake hand. After this connection was made the experimenter made a stabbing gesture with a needle at the rubber hand. The participant reacted with an anticipation of pain and tended to pull back their real hand, although the hand was never actually threatened \cite{LaValle2017}. 
+\begin{figure}[!ht]
+	\begin{center}
+		\woopic{RubberHand}{.8}
+	\end{center}
+	\caption{Rubber hand experiment \cite{LaValle2017}.} \label{fig:RubberHand}
+\end{figure}They also found that hot and cold sensations could be perceived by association as well. This is called the body transfer illusion. This concept can be applied to VR and haptics. If the player can achieve this body transfer illusion, immersion is more successful \cite{LaValle2017}. 
+
+\subsection{Side Effects}
+Side effects of using VR have been found to include nausea, eye strain, disorientation, and other forms of discomfort. Some studies show 80 to 90 percent of people using head-mounted displays felt one or more of these side effects \cite{JIS2}. Visually induced motion sickness (VIMS) has also become an issue with players of fully immersive VR systems. VIMS includes symptoms such as nausea, increased sweating, drowsiness, disorientation, dizziness, headaches, difficulty focusing, blurred vision, and occasionally vomiting \cite{JIS2}. These symptoms are known to vary between people but can begin within minutes of entering a VR experience. Symptoms can also continue for hours after exiting the VR environment. There are many theories as to why VIMS happens to so many people, Figure~\ref{fig:sickness} shows the many causes for each symptom. However there are definite technological factors that contribute to these symptoms.  
+\begin{figure}[!ht]
+	\begin{center}
+		\woopic{sickness}{.6}
+	\end{center}
+	\caption{Causes of Side Effects can not always be identified \cite{LaValle2017}.} \label{fig:sickness}
+\end{figure}Latency is one of these technological culprits. Latency is when there is a time gap between the motion of the player and the system's response. Although VIMS is persistent, some users have been able to adapt to a virtual environment with repeated exposures. As discussed in subsection~\ref{sec:Binocular Cues}, the screen of a head-mounted display sits inches from the users eyes. This causes the eyes to constantly be in a state of convergence which leads to immense eyestrain as it is not a natural position for the eye. Another factor that can contribute to sickness is the spacing between the screens; this distance needs to be determined based on the distance of the users eyes and varies from person to person. As a better understanding of the human sensory system is accomplished, perhaps negative side effects such as VIMS will no longer be an issue.
+
+
+\section{Hardware}
+There are many kinds of virtual reality hardware. Today most companies creating displays for VR use head mounted displays. Head mounted displays (HMD) are devices worn on the head that usually house two small optic displays, one in front of each eye. Some HMD's require a computer to run, the Oculus Rift and the HTC Vive for example. Other HMD's use gaming consoles to run such as the PlayStation VR. Finally some HMD's use phones, such as Android or IOS, to run the display. These are usually the more inexpensive option. Phone driven HMD's include the Google Cardboard, Samsung Gear VR, and Google Daydream View, all of these devices are headsets that use a phone, which is placed inside the headset, to project the image. This study uses the Oculus Rift. 
+
+
+The hardware for the Oculus Rift can be categorized into three main groups; input, a computer, and output. The input consists of information extracted from the real world, for example a pressed button or a head movement. A computer takes that input and processes it to create the proper output. The output corresponds to a stimulus for a sense organ, such as a display or a sound \cite{LaValle2017}. In the Oculus, information moves from the headset to the computer by way of a 10 foot cable \cite{Sharkey2012}.
+
+
+\subsection{Display} \label{DisplayChap}
+A benefit to using head mounted displays is that the user can complete a 360-degree view of the virtual world as they move around. The field of view (FOV) however is usually in the range of 80-100 degrees horizontal. This limited FOV has been found to hinder the users ability to perceive the world as images may become distorted with perception of size and distance being affected. 
+\begin{figure}[!ht]
+	\begin{center}
+		\woopic{insidertheRift}{1}
+	\end{center}
+	\caption{Inside the Rift \cite{RajeshDesai2014}.} \label{fig:insidetheRift}
+\end{figure} 
+
+
+To provide a 360 degree world with a FOV of 80-100 degrees the user must be able to look around. In order to accomplish this, the Oculus Rift needs to track the users movements and move the displayed image accordingly. This can be done by the Oculus identifying the placement of the HMD. The Oculus Rift uses an inertial measurement unit (IMU) to find the orientation of the headset. To do this the IMU uses gyroscope, accelerometer, and magnetometer sensors \cite{LaValle2017}. The IMU is located on the Oculus Rift's circuit board, which is shown in Figure~\ref{fig:insidetheRift}. The gyroscope measures angular velocity along the three orthogonal axes, accelerometers measure linear acceleration along three axes, and magnetometers measure magnetic field strength along the three perpendicular axes \cite{LaValle2017}. The lenses are placed so that the screen appears to be "infinitely far" away to the user and still fills most of their field of view. The lenses can be seen in Figure~\ref{fig:insidetheRift}. This is done in VR headsets by putting the screen very close to the user's eye. This then fills their field of view making it so they do not see the real world. With the screen being so close it is impossible for the human eye focus on it naturally so, convex lenses are used to allow the eyes to focus. Convex lenses act similarly to reading glasses because of their use of magnification. To see a clear picture people may need different distances between them and the scree. The Oculus Rift features a nob that allows the user to change the distance between the screen and the lenses, see Figure~\ref{fig:insidetheRift}. 
+\begin{figure}[!ht]
+	\begin{center}
+		\woopic{RBGcolors}{.7}
+	\end{center}
+	\caption{Color creation in an RGB triangle \cite{LaValle2017}.} \label{fig:RGBcolors}
+\end{figure} This allows individuals to change the distance between the lenses and the screen, allowing them to find their clearest picture. There is also a nob that allows the user to change the distance of the lenses from each other to match up with their own facial structure. 
+
+
+The Oculus Rift uses Organic Light Emitting Diode (OLED) technology for its display, which has a resolution of 960 x 1080 \cite{Sharkey2012}. In OLED displays each pixel has it's own light source, so pixels are not back lit, allowing for darker blacks in comparison to other display systems. The OLED display has self-emitting organic compounds for red, green, and blue. Each color has a value from 0 (dark) to 255 (bright), 0 implies the light is off and 255 implies the light is at full power. Red can be made with the RGB value (255, 0, 0), green is (0, 255, 0) and blue is (0, 0, 255). These colors can be combined to create any visible color, this concept is called trichromatic theory \cite{LaValle2017}. When the RGB values are all equal, (255, 255, 255), then white light is created. Black can be created with RGB values of (0, 0, 0). Figure~\ref{fig:RGBcolors} shows how red, green, and blue can be combined to create all colors. 
+
+
+
+%HOW TRACKING WORKS
+%\begin{figure}[!ht]
+%	\begin{center}
+%		\woopic{riftOrientation}{.8}
+%	\end{center}
+%	\caption{Right-hand rule of rift tracking \cite{Sharkey2012}.} \label{fig:riftOrentation}
+%\end{figure}
+
+
+\subsection{Audio}
+There are many levels of sophistication when it comes to audio quality, 3D stereo sound is one of the premiere options. 3D stereo sound takes into account the location of the user in the environment and delivers sound accordingly. This adds to the immersion of the game making it feel more realistic and life-like \cite{JIS3}. It is common practice to use regular over ear headphones to generate the audio for the environment. 
+
+
+\subsection{Controllers}
+The Oculus uses a controller called the Oculus Touch, shown in Figure~\ref{fig:controller}. It has the ability to vibrate at different intensities and for different lengths of time. It also has a multitude of input buttons and is an easy shape to grip. 
+\begin{figure}[!ht]
+	\begin{center}
+		\woopic{controller}{1.9}
+	\end{center}
+	\caption{Oculus Touch controller from Unity Documentation.} \label{fig:controller}
+\end{figure} The Oculus Touch has touch sensors that can detect one or more objects (fingers) being in contact with or hovering over the sensor, this allows for the user to use the controller without needed to apply much force \cite{Publications2018}. 
+
+
+\section{Conclusion}
+Virtual Reality is an entirely manufactured experience. Designers of VR worlds must take into account every sight, sound, and haptic feedback the user encounters with the goal of creating a believable world. To create a realistic feeling world, it must be as close to reality as possible. To do this is it important to understand how the human body works and how to stimulate the human senses. 
+
+
+

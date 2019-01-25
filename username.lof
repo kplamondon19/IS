@@ -1,0 +1,39 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces A screen shot of the Trials of the Acropolis \cite {Chintiadis}\relax }}{3}{figure.caption.11}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Edgar Dale's Cone of Experience \cite {Davis2015}\relax }}{4}{figure.caption.12}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces The process of information being processed and retained \cite {Tobias2014}\relax }}{7}{figure.caption.14}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Diegetic Interface \cite {Iacovides2015}.\relax }}{11}{figure.caption.15}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Non-diegetic Interface \cite {Iacovides2015}.\relax }}{11}{figure.caption.15}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces An example of spacial user interface in VR, photo from unity3d.com/learn/tutorials/topics/virtual-reality/user-interfaces-vr\relax }}{12}{figure.caption.16}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces A depiction of Neanderthals from 1909 \cite {larsen_2017}.\relax }}{14}{figure.caption.17}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces A reconstruction of a Neanderthal head from present time \cite {Smithsonian}.\relax }}{14}{figure.caption.17}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Neanderthal toolkit : https://www.amnh.org/exhibitions/permanent-exhibitions/anne-and-bernard-spitzer-hall-of-human-origins/neanderthal-tools. \relax }}{17}{figure.caption.18}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Photo of the Cova Gran de Santa Liny field site \cite {CovaGran}.\relax }}{18}{figure.caption.19}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces The first head mounted display created by Ivan Sutherland in 1968 \cite {Mazuryk}. \relax }}{20}{figure.caption.20}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces NASA Ames Virtual Wind Tunnel: (a) outside view, (b) inside view \cite {Mazuryk}. \relax }}{21}{figure.caption.21}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces In interactive model of the human muscles (Left) and a representation of the stress on the hip joint (Right) \cite {GutierrezA.2008}.\relax }}{22}{figure.caption.22}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces A classification of the human body senses \cite {LaValle2017}.\relax }}{23}{figure.caption.23}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces This figure shows the position of human eyes when focused on near and far objects \cite {JIS2}.\relax }}{24}{figure.caption.24}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces The images displayed for the left and right eyes on a head mounted display \cite {LaValle2017}.\relax }}{25}{figure.caption.25}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Occlusion and linear perspective \cite {JIS3}.\relax }}{25}{figure.caption.26}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Placement of objects can be understood based on their shadow's position \cite {LaValle2017}.\relax }}{26}{figure.caption.27}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces A representation of the color wheel with hue, saturation, and value \cite {LaValle2017}.\relax }}{27}{figure.caption.28}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Common Environmental Noise Levels \cite {JIS2}.\relax }}{28}{figure.caption.29}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Common Environmental Noise Levels \cite {JIS2}.\relax }}{29}{figure.caption.30}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Interactions with objects \cite {LaValle2017}.\relax }}{30}{figure.caption.31}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Glove that can create sensations of kinesthetic feedback \cite {Mazuryk}.\relax }}{31}{figure.caption.32}
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Rubber hand experiment \cite {LaValle2017}.\relax }}{32}{figure.caption.33}
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Causes of Side Effects can not always be identified \cite {LaValle2017}.\relax }}{33}{figure.caption.34}
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Inside the Rift \cite {RajeshDesai2014}.\relax }}{34}{figure.caption.35}
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Color creation in an RGB triangle \cite {LaValle2017}.\relax }}{35}{figure.caption.36}
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Oculus Touch controller from Unity Documentation.\relax }}{36}{figure.caption.37}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Objects receive a set of coordinates based on the right-handed coordinate system \cite {LaValle2017}.\relax }}{37}{figure.caption.38}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Mesh for a dolphin \cite {LaValle2017}.\relax }}{38}{figure.caption.39}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Three-dimensional rotations \cite {LaValle2017}.\relax }}{40}{figure.caption.40}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Determining the first intersection between the users line of sight and the objects in the environment, this is done to find what triangles should be rendered \cite {LaValle2017}.\relax }}{41}{figure.caption.41}
+\addvspace {10\p@ }
